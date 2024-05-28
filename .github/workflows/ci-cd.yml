@@ -48,7 +48,7 @@ jobs:
           key: ${{ secrets.AWS_EC2_KEY }}
           script: |
             chmod +x /home/ubuntu/delete_script.sh
-            sudo /home/ubuntu/delete_script.shA
+            sudo /home/ubuntu/delete_script.sh
 
       - name: Run a multi-line script
         run: |
