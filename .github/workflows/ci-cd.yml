@@ -56,7 +56,7 @@ jobs:
           host: ${{ secrets.AWS_EC2_HOST }}
           username: ${{ secrets.AWS_EC2_USER }}
           key: ${{ secrets.AWS_EC2_KEY }}
-          source: "build/*.jar"
+          source: "build/libs/*.jar"
           target: "/home/ubuntu/deploy-jar"
 
       - name: Execute remote command via SSH
